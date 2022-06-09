@@ -19,7 +19,7 @@ def send_api(path, method, body):
         body["id"] = name
     if "lockername" in body:
         body["lockername"] = lockerName
-    API_HOST = "http://15.165.63.75:5000"
+    API_HOST = "http://*.*.*.*:*"
     url = API_HOST + path
     headers = {'charset': 'UTF-8', 'Content-Type': 'application/json', 'Accept': '*/*'}
     
